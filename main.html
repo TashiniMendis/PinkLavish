@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	<title>Home Page</title>
+	 
+</head>
+<body>
+	<header>
+		
+		<h1>Salon Pink Lavish</h1>
+		<div class="main">
+			<ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="01.html">Services</a></li>
+				<li><a href="pro.html">Products</a></li>
+				<li><a href="Team.html">Our Team</a></li>
+				<li><a href="Contactus.html">Contact</a></li>
+				
+			</ul>
+		</div> 
+		<h3>Are you in owner or Memeber</h3>
+		<div class="main2">
+		<ul><li><a href="login.php">Sign In</a></li></ul></div>
+		
+	</header>
+		<div id="main">
+			<img src="images/one.jpg" id="slideimage">
+		</div>
+
+		<script>
+			function first(){
+				document.getElementById("slideimage").src="images/two.jpg";
+			}
+			function second(){
+				document.getElementById("slideimage").src="images/three.jpg";
+			}
+			function third(){
+				document.getElementById("slideimage").src="images/seven.jpg";
+			}
+			function fourth(){
+				document.getElementById("slideimage").src="images/six.jpg";
+			}
+			setInterval(first,2000);
+			setInterval(second,4000);
+			setInterval(third,6000);
+			setInterval(fourth,8000);
+		</script>
+		<script>
+			/*
+			 * This is a simple module for generating easy-to-read opening hours to
+			 * place on a website for a business. The module will display the hours, highlight the current day,
+			 * and indicate whether the business is currently open based on the user's time settings. 
+			 * 
+			 * Here's how to use it:
+			 * 
+			 * 1. Simply include the styles (show here at the top).
+			 * 2. Then place your markup with whatever hours necessary (the example here also shows how you can include 
+			 *    split-hours where the business closes for a short time in the middle of the day). You can also easily 
+			 *    internationalize your page by translating the text appearing in the CSS and the markup.
+			 * 3. Finally, include the JavaScript (best if included at the bottom of the page or in an on-ready function)
+			 *
+			 * NOTE: This module depends on jQuery.
+			 */
+			</script>
+			 
+			<style>
+			.OpeningHours {
+				font-family:Lucida Console;
+				padding:0 10px 0 10px;
+				display: inline-block;
+				text-align: center;
+				position: absolute;
+				top: 40%;
+				right: 0%;
+				left: 0%;
+				margin: 40%;
+				background-color: black;
+				color: white;
+			}
+			.OpeningHours__Content  {
+				float:left;
+			}
+			.OpeningHours__Status {
+				font-size:18px;
+				color: black;
+				font-weight: bold;
+			}
+			.Day--Today {
+				color: #7Aa007;
+			}
+			.OpeningHours__Table tr td:first-child {
+				font-weight:bold;
+			}
+			.OpeningHours__Status {
+				display:block;
+				margin-top:-1em;
+				text-align:center;
+			}
+			.OpeningHours__Status:after {
+				content:" open at these times:";
+			}
+			.OpeningHours__Status--Open {
+				color:green;
+			}
+			.OpeningHours__Status--Open:after {
+				content:" open";
+				color: #6C0;
+			}
+			.OpeningHours__Status--Closed:after {
+				content:" closed";
+				color: red;
+			}
+			.OpeningHours__Table tr td {
+				padding:5px;
+			}
+			</style>
+			 
+			<section class="OpeningHours">
+				<div class="OpeningHours__Content">
+					<div class="OpeningHours_Header">
+						<span class="OpeningHours__Status">We are</span>
+					</div>
+					<table class="OpeningHours__Table">
+						<tr class="Day--Monday" itemprop="openingHours">
+							<td>Monday</td>
+							<td class="opens">11:00</td>
+							<td>-</td>
+							<td class="closes">15:00</td>
+						</tr>
+						<tr class="Day--Tuesday" itemprop="openingHours">
+							<td>Tuesday</td>
+							<td class="opens">10:00</td>
+							<td>-</td>
+							<td class="closes">15:00</td>
+						</tr>
+						<tr class="Day--Tuesday" itemprop="openingHours">
+							<td></td>
+							<td class="opens">17:30</td>
+							<td>-</td>
+							<td class="closes">20:00</td>
+						</tr>
+						<tr class="Day--Wednesday" itemprop="openingHours">
+							<td>Wednesday</td>
+							<td class="opens">11:00</td>
+							<td>-</td>
+							<td class="closes">15:00</td>
+						</tr>
+						<tr class="Day--Thursday" itemprop="openingHours">
+							<td>Thursday</td>
+							<td class="opens">11:00</td>
+							<td>-</td>
+							<td class="closes">15:00</td>
+						</tr>
+						<tr class="Day--Friday" itemprop="openingHours">
+							<td>Friday</td>
+							<td class="opens">11:00</td>
+							<td>-</td>
+							<td class="closes">15:00</td>
+						</tr>
+						<tr class="Day--Friday" itemprop="openingHours">
+							<td></td>
+							<td class="opens">16:30</td>
+							<td>-</td>
+							<td class="closes">20:00</td>
+						</tr>
+						<tr class="Day--Saturday" itemprop="openingHours">
+							<td>Saturday</td>
+							<td class="opens">11:00</td>
+							<td>-</td>
+							<td class="closes">20:00</td>
+						</tr>
+						<tr class="Day--Sunday" itemprop="openingHours">
+							<td>Sunday</td>
+							<td colspan=2>Closed
+								<span style='display:none' class="opens">24:00</span>
+								<span style='display:none' class="closes">24:00</span></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			 
+			<script>
+			(function(){
+				function formatTime(time){
+					var timeSplit = time.split(":"),
+						timeHours = timeSplit[0];
+			 
+					timeHours = timeHours < 10 ? "0" + timeHours : timeHours;
+			 
+					return timeHours + timeSplit[1];
+				}
+			 
+				var currentDate = new Date(),
+						weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+						currentDay = weekday[currentDate.getDay()],
+						currentTimeHours = currentDate.getHours(),
+						currentTimeMinutes,
+						timeNow,
+						currentDaySelector,
+						openTimes,
+						closeTimes,
+						isOpen = false;
+			 
+				currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
+				currentTimeMinutes = currentDate.getMinutes();
+				timeNow = currentTimeHours + "" + currentTimeMinutes;
+			 
+				currentDaySelector = ".Day--" + currentDay; //gets today's weekday and turns it into id
+				$(currentDaySelector).toggleClass("Day--Today"); //hightlights today
+			 
+				openTimes = $(currentDaySelector).children('.opens').map(function(){
+					return $.trim($(this).text());
+				}).get();
+			 
+				closeTimes = $(currentDaySelector).children('.closes').map(function(){
+					return $.trim($(this).text());
+				}).get();
+			 
+				$(openTimes).each(function(key, value) {
+					var openTimeFormatted = formatTime(openTimes[key]),
+							closeTimeFormatted = formatTime(closeTimes[key]);
+			 
+					if(timeNow >= openTimeFormatted && timeNow <= closeTimeFormatted) {
+						isOpen = true;
+					}
+				});
+			 
+				if (isOpen) {
+					$(".OpeningHours__Status").toggleClass("OpeningHours__Status--Open");
+				} else {
+					$(".OpeningHours__Status").toggleClass("OpeningHours__Status--Closed");
+				}
+			})();
+			</script>
+
+</body>
+<footer>
+	<div class="footer-content">
+		<hr>
+		<br>
+		<h3>Find us here</h3>
+		<ul class="socials">
+		   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		   <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		   <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+		</ul>
+		<hr>
+		<br><br>
+		   <div class="foot_bottom">
+			<p>copyright &copy;2021 Saloon PinkLavish. designed by <span id="two">frontend_FREEBIRDS</span></p>
+		   </div>  
+   </div>
+</footer>
+</html>

@@ -1,0 +1,213 @@
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+ }
+ header{
+	 padding: 0.8px;
+	 background: rgba(218, 32, 125, 0.555);
+	 color: rgb(247, 242, 245);
+ }
+ .main{
+	 position: absolute;
+	 top: 0%;
+	 right: 5%;
+	 
+ 
+ }
+ .main ul{
+	 float: right;
+	 list-style-type: none;
+	 margin-top: 25px;
+ }
+ .main ul li{
+	 display: inline-block;
+ }
+ .main ul li a {
+	 text-decoration: none;
+	 color: rgb(253, 252, 252) ;
+	 padding: 8px 12px;
+	 border: 1px solid transparent;
+	 transition: 0.6s ease;
+	 text-align: center;
+	 text-decoration: none;
+	 font-size: 17px;
+	 font-weight: bold;
+ }
+ .main ul li a:hover{
+	 background-color: rgb(80, 6, 61);
+	 color: rgb(252, 251, 253);
+	 
+ 
+ }
+ .main ul li.active a{
+	 background-color: rgb(90, 2, 53);
+	 color: #fff;
+ }
+ .logo img{
+    position: absolute;
+    top:1%;
+    left: 0.6%;
+    width: 110px;
+    height: 130px;
+    float: left;
+}
+ 
+#main{
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+
+}
+
+img{
+	height: 700px;
+	width: 100%;
+}
+
+ 
+ h3{
+     
+	text-align: center;
+	font-size: 20px;
+	font-family:serif;
+    color: rgb(11, 3, 41);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    right: 0%;
+ }
+ .main2{
+    position: absolute;
+    top: 40px;
+    right: 10%;
+    
+
+}
+.main2 ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.main2 ul li{
+    display: inline-block;
+}
+.main2 ul li a {
+    text-decoration: none;
+    
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(63, 12, 56);
+    color: #fff;
+}
+
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 1200px;
+    background:rgba(218, 32, 125, 0.555);
+    height:400px;
+    width: 100vw;
+    font-family:cursive;
+    padding: 40px;
+    color:black;
+}
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content hr
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-content h3
+{
+    font-size: 2.0rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+    position:absolute;
+    top: 2%;
+    right: 0%;
+    left: 0%;
+}
+
+.socials
+{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+}
+.socials li
+{
+margin: 0 12px;
+}
+.socials a
+{
+text-decoration: none;
+color: black;
+}
+.socials a i
+{
+font-size: 1.5rem;
+transition: color .4s ease;
+}
+.socials a:hover i
+{
+color: rgb(80, 6, 61);
+}
+.foot_bottom
+{
+    background: rgb(80, 6, 61);
+    width: 100vw;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.foot_bottom p
+{
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+.foot_bottom span.two
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    
+}
+#two 
+{
+    color: rgb(175, 174, 174);
+}
+
+@media screen and (max-width:900px){
+    .card{
+        flex: 100%;
+        max-width: 500px;
+    }
+}

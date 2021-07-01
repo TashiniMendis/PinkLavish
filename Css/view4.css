@@ -1,0 +1,241 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Monteserrat';
+    background-color: white;
+
+}
+
+h1{
+   text-align: center;
+   font-size: 50px;
+   font-family: Brush Script MT, Brush Script Std, cursive;
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+}
+
+header{
+    padding: 0.5px;
+    background: rgba(218, 32, 125, 0.555);
+    color: rgb(247, 242, 245);
+}
+
+body{
+    margin: 0%;
+    padding: 8px;
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+   text-align: center;
+   font-size: 50px;
+   font-family: Brush Script MT, Brush Script Std, cursive;
+}
+header{
+    padding: 0.5px;
+   
+    color: rgb(247, 242, 245);
+}
+.main{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    
+
+}
+.main ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+.main ul li{
+	display: inline-block;
+}
+.main ul li a {
+	text-decoration: none;
+	color: rgb(253, 252, 252) ;
+	padding: 8px 12px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+.main ul li a:hover{
+	background-color: rgb(80, 6, 61);
+    color: rgb(252, 251, 253);
+    
+
+}
+.main ul li.active a{
+	background-color: rgb(90, 2, 53);
+	color: #fff;
+}
+.bar
+{
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
+    font-family: Brush Script MT, Brush Script Std, cursive; 
+    padding: 0.5px;
+    background: rgba(218, 32, 125, 0.555);
+    color: rgb(247, 242, 245);  
+}
+
+.viewbox .list
+{
+   height: auto;
+   width: 50%;
+   margin: 20px 400px 10px 400px;
+   padding: 15px;
+   position: absolute;
+   display: flex ;
+   justify-content: center;
+   background: whitesmoke;
+   float: left;
+}
+
+
+.viewbox .list  h1
+{
+    font-size: 15px;
+    font-family: 'Monteserrat';
+    position: absolute;
+    left: 40px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+   
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.viewbox .list  h3
+{
+    font-size: 15px;
+    font-family: 'Monteserrat';
+    word-spacing: 2px;
+    position: absolute;
+    right: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.viewbox .list  ul
+{
+   padding: 5px;
+}
+
+.viewbox .list ul li
+{
+    list-style: none;
+    margin:15px 0px 0px 40px;
+
+}
+/* Footer */
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 1500px;
+    background:rgba(218, 32, 125, 0.555);
+    height:400px;
+    width: 100vw;
+    font-family:cursive;
+    padding: 40px;
+    color:black;
+}
+
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content hr
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-content h3
+{
+    font-size: 2.0rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+}
+
+.socials
+{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+}
+
+.socials li
+{
+   margin: 0 12px;
+}
+
+.socials a
+{
+   text-decoration: none;
+   color: black;
+}
+
+.socials a i
+{
+   font-size: 1.5rem;
+   transition: color .4s ease;
+}
+
+.socials a:hover i
+{
+   color: rgb(80, 6, 61);
+}
+
+.foot_bottom
+{
+    background: rgb(80, 6, 61);
+    width: 100vw;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.foot_bottom p
+{
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.foot_bottom span
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

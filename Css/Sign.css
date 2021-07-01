@@ -1,0 +1,67 @@
+body{
+    background-color: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(0115.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+ }
+ header{
+	 padding: 0.8px;
+	 background: rgba(218, 32, 125, 0.555);
+	 color: rgb(247, 242, 245);
+     height: 80px;
+ }
+ .main{
+	 position: absolute;
+	 top: 2%;
+	 right: 5%;
+	 
+ 
+ }
+ .main ul{
+	 float: right;
+	 list-style-type: none;
+	 margin-top: 25px;
+ }
+ .main ul li{
+	 display: inline-block;
+ }
+ .main ul li a {
+	 text-decoration: none;
+	 color: rgb(253, 252, 252) ;
+	 padding: 8px 12px;
+	 border: 1px solid transparent;
+	 transition: 0.6s ease;
+	 text-align: center;
+	 text-decoration: none;
+	 font-size: 17px;
+	 font-weight: bold;
+ }
+ .main ul li a:hover{
+	 background-color: rgb(80, 6, 61);
+	 color: rgb(252, 251, 253);
+	 
+ 
+ }
+ .main ul li.active a{
+	 background-color: rgb(90, 2, 53);
+	 color: #fff;
+ }
+.login-box{
+    max-width: 700px;
+    float: none;
+    margin: 150px auto;
+}
+ .login-left{
+     background: rgba(211, 211, 211, 0.5);
+     padding: 30px;
+ }
+
+ .login-right{
+     background: #fff;
+     padding: 30px;
+ }
+

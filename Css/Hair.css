@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 8px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+   text-align: center;
+   font-size: 50px;
+   font-family: Brush Script MT, Brush Script Std, cursive;
+}
+header{
+    padding: 0.5px;
+    background: rgba(218, 32, 125, 0.555);
+    color: rgb(247, 242, 245);
+}
+.main{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+}
+.main ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+.main ul li{
+	display: inline-block;
+}
+.main ul li a {
+	text-decoration: none;
+	color: rgb(253, 252, 252) ;
+	padding: 8px 12px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+.main ul li a:hover{
+	background-color: rgb(80, 6, 61);
+    color: rgb(252, 251, 253);
+    
+
+}
+.main ul li.active a{
+	background-color: rgb(90, 2, 53);
+	color: #fff;
+}
+
+.column1
+{
+    display: flex;
+    float: left;
+    width: 50%;
+    padding: 5px;
+    height: 300px; 
+
+}
+.about-img:hover
+{
+transform: scale(1.2);
+background: #eef4f5;
+box-shadow: 2px 2px 2px #000;
+z-index: 2;
+}
+.about-img
+{
+    position: absolute;
+    top: 140px;
+    left: 70px;
+}
+.about-img::before
+{
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: 15px;
+    border: 10px solid rgba(131, 130, 130, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.about-img img
+{
+    height: 400px;
+    width: 600px;
+}
+.column2
+{
+    display: flex;
+    margin-top: 20px ;
+    margin-right: 50px ;
+    float: right;
+    width: 45%;
+    padding: 35px;
+    height: 400px; 
+
+}
+.about-text
+{
+    padding-top: 80px;
+    margin-left: 70px;
+}
+.about-text h2
+{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 25px;
+    
+}
+.about-text p
+{
+    font-size: 18px;
+    color: #000;   
+}
+.about-text a
+{
+    background: rgba(218, 32, 125, 0.555);
+    color: #000;   
+    padding: 7px 15px;
+    display: inline-block;
+    margin-top: 28px ;
+    text-decoration: none;
+}
+.about-text a:hover
+{
+    background-color: rgb(90, 2, 53);
+    color: whitesmoke;
+    font:bold;
+}
+.column3
+{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+    float: left;
+    width: 45%;
+    padding: 35px;
+    height: 400px; 
+    
+}
+
+.column4
+{
+    display: flex;
+    float: right;
+    width: 50%;
+    padding: 20px;
+    height: 300px; 
+}
+.column4 .about-img
+{
+    position: absolute;
+    top: 640px;
+    left: 728px;
+    
+}
+.column5
+{
+    display: flex;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 300px; 
+}
+.column5 .about-img
+{
+    position: absolute;
+    top: 1140px;
+    left: 70px;
+    
+}
+.column6
+{
+    display: flex;
+    margin-top: 100px;
+    margin-right: 50px;
+    float: right;
+    width: 45%;
+    padding: 65px;
+    height: 400px; 
+    
+}
+
+.column2 , .column3 ,.column6
+{
+	background-color:whitesmoke;
+    color: rgb(7, 6, 12);
+}
+
+.column2 , .column3 ,.column6 h2
+{
+	text-align: center;
+}
+
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Footer */
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 1600px;
+    background:rgba(218, 32, 125, 0.555);
+    height:400px;
+    width: 100vw;
+    font-family:cursive;
+    padding: 40px;
+    color:black;
+}
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content hr
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-content h3
+{
+    font-size: 2.0rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+}
+
+.socials
+{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+}
+.socials li
+{
+margin: 0 12px;
+}
+.socials a
+{
+text-decoration: none;
+color: black;
+}
+.socials a i
+{
+font-size: 1.5rem;
+transition: color .4s ease;
+}
+.socials a:hover i
+{
+color: rgb(80, 6, 61);
+}
+.foot_bottom
+{
+    background: rgb(80, 6, 61);
+    width: 100vw;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.foot_bottom p
+{
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+.foot_bottom span.two
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    
+}
+#two 
+{
+    color: rgb(175, 174, 174);
+}

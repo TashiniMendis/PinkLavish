@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+        <meta charset="utf-8">
+        <title>Contactus</title>
+        <link href="css/Contactus.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Salon Pink Lavish</h1>
+        <div class="main">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="01.html">Services</a></li>
+				<li><a href="pro.html">Products</a></li>
+				<li><a href="Team.html">Our Team</a></li>
+                <li class="active"><a href="#">Contact</a></li>
+            </ul>
+        </div> 
+        
+    </header>
+    <img src="images/991.jpg" height="200px" width="100%">
+
+    <div class="container_all">
+        <div class="left">
+            <ul>
+                <li><h3><br><br>ADDRESS</h3>
+                    <h5><br>Salon Pink Lavish,<br>No 278,<br>Bandaranayake Mawatha,<br>Moratuwa.</h5>
+                    </li>
+                <li><h3><br><br>HOTLINE</h3>
+                    <h4><br><a href="#"><i class="fa fa-phone-square"></i></a>+94 112 785 965<br><a href="#"><i class="fa fa-phone-square"></i></a>+94 712 785 965</h4></li>
+                <li ><h3><br><br>E-MAIL</h3>
+                    <h4><br><a href="#"><i class="fa fa-envelope-open"></i></a>salonpinklavish@gmail.com</h4></li>
+                    <li > <br><br><hr>
+                        <br>
+                        <h3>Find us here<br><br></h3>
+                        <ul class="socials">
+                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        </ul></li>
+            </ul>
+            
+            
+        </div>
+      
+             <div class="right">
+                <section id="contactForm">
+                    <div class="container1">
+                        <p><b>You are welcome to leave a message if you have any question. Our team is available anytime to solve your problems.</b></p>
+                        <form action="https://formspree.io/f/mwkaeobe" method="POST" id="my-form">
+                          <div class="form-group">
+                              <label for="firstName">First Name</label>
+                              <input type="text" id="firstName" name="firstName">
+                          </div>
+                          <div class="form-group">
+                              <label for="lasttName">Last Name</label>
+                              <input type="text" id="lasttName" name="lasttName">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" id="email" name="email">
+                          </div>
+                          <div class="form-group">
+                              <label for="massage">massage</label>
+                              <textarea type="text" id="massage" name="massage" cols="30" rows="2"></textarea>
+                          </div>
+                          <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    
+                    <div id="status" class="success">Success</div>
+                  </section>
+                  <section id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.7948727598555!2d79.89882561459203!3d6.794795295088784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24541c03dfbf1%3A0x5e7de08c240ed1d!2s278%20Bandaranayake%20Mawatha%2C%20Moratuwa%2010400!5e0!3m2!1sen!2slk!4v1616750741405!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </section>
+                   
+             </div>
+    </div>
+<footer>
+    <div class="footer-content">
+        <hr>
+        <br>
+        <h3>Find us here</h3>
+        <ul class="socials">
+           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+           <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+        </ul>
+        <hr>
+        <br><br>
+           <div class="foot_bottom">
+            <p>copyright &copy;2021 Saloon PinkLavish. designed by <span>frontend_FREEBIRDS</span></p>
+           </div>  
+   </div>
+</footer>
+    <script>
+      var x = document.getElementById("demo");
+      
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+      </script>
+  </body>
+  </html>
